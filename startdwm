@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# A simple script to start dwm in a while-loop, allowing dwm 
+# to be restarted on-the-fly without closing other X applications
+#
+# Usage:    killall dwm         # restart dwm on-the-fly
+#           killall startdwm    # kill X session
+
+conky | while read line; do
+#dwmstatus | while read line; do
+    xsetroot -name "$line"; 
+# log stderror to a file 
+done | while true; do dwm 2> ~/.dwm.err; done;
+# no error logging
+#done | while true; do dwm > /dev/null; done;
+
