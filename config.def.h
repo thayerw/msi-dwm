@@ -37,6 +37,7 @@ static const Rule rules[] = {
 	{ "Vlc",            NULL,       NULL,       0,              True,       -1 },
 	{  NULL,           "wicd-client.py", NULL,  0,              True,       -1 },
 	{  NULL,            NULL,      "alsamixer", 0,              True,       -1 },
+	{  NULL,           "gnome-alsamixer", NULL, 0,              True,       -1 },
 };
 
 /* layout(s) */
@@ -112,7 +113,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec firefox") },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec firefox -private") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("urxvtcd -e alsamixer") },
+	{ MODKEY,                       XK_v,      spawn,          SHCMD("exec gnome-alsamixer") },
 	{ Mod1Mask|ControlMask|ShiftMask,  XK_k,   spawn,          SHCMD("xkill") },
 	{ Mod1Mask|ControlMask,         XK_l,      spawn,          SHCMD("slock") },
 	{ Mod1Mask|ControlMask,         XK_Delete, spawn,          SHCMD("sudo shutdown -r now") },
