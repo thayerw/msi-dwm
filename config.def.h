@@ -107,14 +107,12 @@ static Key keys[] = {
 	{ MODKEY,                       XK_q,      quit,           {0} },                       /* restart dwm on-the-fly */
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("killall startdwm") }, /* kill the dwm session */
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec urxvtcd -e bash -c 'tmux attach -d -t dublin'") },
-	//{ MODKEY,                       XK_s,      spawn,          SHCMD("exec gnome-terminal -x bash -c 'tmux attach -d -t dublin'") },
-	//{ MODKEY,                       XK_s,      spawn,          SHCMD("exec urxvt -e bash -c 'screen -dRR -S $HOSTNAME.$HOSTNAME'") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("exec nautilus") },
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("exec wicd-client -n") },
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec firefox") },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec firefox -private") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("xterm -e alsamixer") },
+	{ MODKEY,                       XK_v,      spawn,          SHCMD("urxvtcd -e alsamixer") },
 	{ Mod1Mask|ControlMask|ShiftMask,  XK_k,   spawn,          SHCMD("xkill") },
 	{ Mod1Mask|ControlMask,         XK_l,      spawn,          SHCMD("slock") },
 	{ Mod1Mask|ControlMask,         XK_Delete, spawn,          SHCMD("sudo shutdown -r now") },
@@ -124,9 +122,6 @@ static Key keys[] = {
 	{ 0,                            0x1008FF11, spawn,         SHCMD("dvolbar --decrease 6") },     /* fn hotkey: vol down */
 	{ 0,                            0x1008FF12, spawn,         SHCMD("dvolbar --toggle") },         /* fn hotkey: vol mute */
 	{ 0,                            0x1008FF13, spawn,         SHCMD("dvolbar --increase 6") },     /* fn hotkey: vol up */
-	//{ 0,                            0x1008FF11, spawn,         SHCMD("amixer set Master 2dB- unmute") },
-	//{ 0,                            0x1008FF12, spawn,         SHCMD("amixer set Master mute") },
-	//{ 0,                            0x1008FF13, spawn,         SHCMD("amixer set Master 2dB+ unmute") },
 };
 
 /* button definitions */
