@@ -67,7 +67,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "urxvtcd", NULL };
+static const char *termcmd[]  = { "xterm", NULL };
 //static const char *termcmd[]  = { "gnome-terminal", NULL };
 
 static Key keys[] = {
@@ -110,7 +110,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_q,      quit,           {0} },                       /* restart dwm on-the-fly */
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("killall startdwm") }, /* kill the dwm session */
-	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec urxvtcd -e bash -c 'tmux attach -d -t dublin'") },
+	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec xterm -e bash -c 'screen -dRR -S $HOSTNAME'") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("exec nautilus") },
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("exec wicd-client -n") },
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
