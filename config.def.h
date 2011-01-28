@@ -114,7 +114,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("exec nautilus") },
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("exec wicd-client -n") },
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec firefox") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec tabbed-vimprobable2") },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec firefox -private") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("exec gnome-alsamixer") },
 	{ Mod1Mask|ControlMask|ShiftMask,  XK_k,   spawn,          SHCMD("xkill") },
