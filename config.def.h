@@ -38,6 +38,9 @@ static const Rule rules[] = {
 	{  NULL,           "wicd-client.py", NULL,  0,              True,       -1 },
 	{  NULL,            NULL,      "alsamixer", 0,              True,       -1 },
 	{  NULL,           "gnome-alsamixer", NULL, 0,              True,       -1 },
+	{ "Worker",         NULL,       NULL,       1 << 2,         False,      -1 },
+	{ "Worker",        "Copy",      NULL,       0,              True,       -1 },
+	{ "Tabbed",         NULL,       NULL,       1 << 1,         False,      -1 },
 };
 
 /* layout(s) */
