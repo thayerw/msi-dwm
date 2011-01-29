@@ -1,6 +1,5 @@
 # ~/.conkyrc
 # Thayer Williams - http://cinderwick.ca
-# vim:nu:ai:si:et:ts=4:sw=4:ft=conkyrc:
 
 background no
 out_to_x no
