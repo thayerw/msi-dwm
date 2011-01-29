@@ -26,7 +26,7 @@ static const Rule rules[] = {
 	{ "Gajim.py",       NULL,       NULL,       0,              True,       -1 },
 	{ "Nitrogen",       NULL,       NULL,       0,              True,       -1 },
 	{ "Galculator",     NULL,       NULL,       0,              True,       -1 },
-	{ "trayer",         NULL,       NULL,       1 << 4,         True,       -1 },
+	{ "stalonetray",    NULL,       NULL,       1 << 4,         True,       -1 },
 	{ "Gimp",           NULL,       NULL,       1 << 3,         True,       -1 },
 	{ "Nautilus",       NULL,       NULL,       1 << 2,         False,      -1 },
 	{ "Nautilus-cd-burner", NULL,   NULL,       0,              True,       -1 },
