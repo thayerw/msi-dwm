@@ -20,7 +20,7 @@ static const char *tags[] = { "1", "2", "3", "4", "5" };
 static const Rule rules[] = {
 	/* class            instance    title       tags mask     isfloating   monitor */
 	{ "Keepassx",       NULL,       NULL,       0,              True,       -1 },
-	{ "MPlayer",        NULL,       NULL,       0,              False,      -1 },
+	{ "MPlayer",        NULL,       NULL,       0,              True,       -1 },
 	{ "Wine",           NULL,       NULL,       0,              False,      -1 },
 	{ "XFontSel",       NULL,       NULL,       0,              True,       -1 },
 	{ "Gajim.py",       NULL,       NULL,       0,              True,       -1 },
