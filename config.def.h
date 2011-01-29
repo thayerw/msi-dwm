@@ -32,6 +32,7 @@ static const Rule rules[] = {
 	{ "Nautilus-cd-burner", NULL,   NULL,       0,              True,       -1 },
 	{  NULL,            NULL, "File Management Preferences", 0, True        -1 },
 	{  NULL,          "file_properties",  NULL, 0,              True        -1 },
+	{ "Tabbed",         NULL,       NULL,       1 << 1,         False,      -1 },
 	{ "Chromium",       NULL,       NULL,       1 << 1,         False,      -1 },
 	{ "Namoroka",       NULL,       NULL,       1 << 1,         False,      -1 },
 	{ "XCalc",          NULL,       NULL,       0,              True,       -1 },
@@ -41,7 +42,6 @@ static const Rule rules[] = {
 	{  NULL,           "gnome-alsamixer", NULL, 0,              True,       -1 },
 	{ "Worker",         NULL,       NULL,       1 << 2,         False,      -1 },
 	{ "Worker",        "Copy",      NULL,       0,              True,       -1 },
-	{ "Tabbed",         NULL,       NULL,       1 << 1,         False,      -1 },
 };
 
 /* layout(s) */
@@ -116,7 +116,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("exec wicd-client -n") },
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec tabbed-vimprobable2") },
-	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec firefox -private") },
+	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec chromium") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("exec gnome-alsamixer") },
 	{ Mod1Mask|ControlMask|ShiftMask,  XK_k,   spawn,          SHCMD("xkill") },
 	{ Mod1Mask|ControlMask,         XK_l,      spawn,          SHCMD("slock") },
