@@ -6,11 +6,11 @@
 # Usage:    killall dwm         # restart dwm on-the-fly
 #           killall startdwm    # kill X session
 
-conky | while read line; do
-#dwmstatus | while read line; do
+dwm_dir=${HOME}/.dwm
+
+conky -c ${dwm_dir}/conkyrc | while read line; do
     xsetroot -name "$line"; 
 # log stderror to a file 
-done | while true; do dwm 2> ~/.dwm.err; done;
+done | while true; do ${dwm_dir}/dwm 2> ${dwm_dir}/dwm.err; done;
 # no error logging
 #done | while true; do dwm > /dev/null; done;
-
