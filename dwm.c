@@ -1009,7 +1009,7 @@ initfont(const char *fontstr) {
 		dc.font.ascent = dc.font.xfont->ascent;
 		dc.font.descent = dc.font.xfont->descent;
 	}
-	dc.font.height = dc.font.ascent + dc.font.descent + 4;
+	dc.font.height = dc.font.ascent + dc.font.descent + 2;
 }
 
 Bool
