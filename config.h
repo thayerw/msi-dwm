@@ -37,11 +37,8 @@ static const Rule rules[] = {
 	{ "Namoroka",       NULL,       NULL,       1 << 1,         False,      -1 },
 	{ "XCalc",          NULL,       NULL,       0,              True,       -1 },
 	{ "Vlc",            NULL,       NULL,       0,              True,       -1 },
-	{  NULL,           "wicd-client.py", NULL,  0,              True,       -1 },
+	{  NULL,           "wicd-client.py", NULL,  0,              False,      -1 },
 	{  NULL,            NULL,      "alsamixer", 0,              True,       -1 },
-	{  NULL,           "gnome-alsamixer", NULL, 0,              True,       -1 },
-	{ "Worker",         NULL,       NULL,       1 << 2,         False,      -1 },
-	{ "Worker",        "Copy",      NULL,       0,              True,       -1 },
 };
 
 /* layout(s) */
