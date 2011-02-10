@@ -9,7 +9,7 @@ total_run_times 0
 use_spacer none
 
 TEXT
-${acpitemp}°  \
+${hwmon 0 temp 1}°  \
 ${loadavg 1}  \
 ${cpu cpu1}%  ${freq_g 1}GHz ▪ \
 ${mem} ▪ \
