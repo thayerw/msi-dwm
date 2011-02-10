@@ -113,7 +113,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec tabbed-vimprobable2") },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec chromium") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("exec gnome-alsamixer") },
+	{ MODKEY,                       XK_v,      spawn,          SHCMD("exec urxvtcd -e alsamixer -g") },
 	{ Mod1Mask|ControlMask|ShiftMask,  XK_k,   spawn,          SHCMD("xkill") },
 	{ Mod1Mask|ControlMask,         XK_l,      spawn,          SHCMD("slock") },
 	{ Mod1Mask|ControlMask,         XK_Delete, spawn,          SHCMD("sudo shutdown -r now") },
