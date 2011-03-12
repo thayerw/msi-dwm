@@ -70,7 +70,6 @@ static const char *termcmd[]  = { "urxvtcd", NULL };
 static Key keys[] = {
 	/* for octal keycodes see /usr/share/X11/XKeysymDB */
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          SHCMD("exec gmrun") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },                   /* toggle statusbar */
@@ -107,22 +106,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_q,      quit,           {0} },                       /* restart dwm on-the-fly */
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("killall startdwm") }, /* kill the dwm session */
-	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec urxvtcd -e bash -c 'screen -dRR -S $HOSTNAME'") },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("exec nautilus") },
-	{ MODKEY,                       XK_n,      spawn,          SHCMD("exec wicd-client -n") },
-	{ MODKEY,                       XK_c,      spawn,          SHCMD("xcalc") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD("exec chromium") },
-	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("exec tabbed-vimprobable2") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("exec urxvtcd -e alsamixer -g") },
-	{ Mod1Mask|ControlMask|ShiftMask,  XK_k,   spawn,          SHCMD("xkill") },
-	{ Mod1Mask|ControlMask,         XK_l,      spawn,          SHCMD("slock") },
-	{ Mod1Mask|ControlMask,         XK_Delete, spawn,          SHCMD("sudo shutdown -r now") },
-	{ Mod1Mask|ControlMask,         XK_Insert, spawn,          SHCMD("sudo shutdown -h now") },
-	{ 0,                            XK_Print,  spawn,          SHCMD("scrot %Y%m%d-%H.%M.%S.png -t 280x175 -e 'mv $f $m ~/tmp/'") },
-	{ 0|ShiftMask,                  XK_Print,  spawn,          SHCMD("scrot %Y%m%d-%H.%M.%S.png -t 280x175 -d 5 -e 'mv $f $m ~/tmp/'") },
-	{ 0,                            0x1008FF11, spawn,         SHCMD("dvolbar --decrease 6") },     /* fn hotkey: vol down */
-	{ 0,                            0x1008FF12, spawn,         SHCMD("dvolbar --toggle") },         /* fn hotkey: vol mute */
-	{ 0,                            0x1008FF13, spawn,         SHCMD("dvolbar --increase 6") },     /* fn hotkey: vol up */
 };
 
 /* button definitions */
